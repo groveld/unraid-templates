@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Beta>True</Beta>
+  <Name>WatchDog</Name>
+  <Repository>groveld/watchdog</Repository>
+  <Registry>https://hub.docker.com/r/groveld/watchdog</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/2dV4xRN</Support>
+  <Project>https://github.com/groveld/discord-watchdog</Project>
+  <Overview>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
+  <Category>Network:Other Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5052]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/watchdog.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/img/watchdog.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateText>Donate</DonateText>
+  <DonateLink/>
+  <Description>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5052</HostPort>
+        <ContainerPort>5052</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/usr/src/watchdog/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>BOT_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_SECRET</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_OWNER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_SALT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BOT_CALLBACK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Token" Target="BOT_TOKEN" Default="" Mode="" Description="Container Variable: BOT_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Client Secret" Target="BOT_SECRET" Default="" Mode="" Description="Container Variable: BOT_SECRET" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Owner ID" Target="BOT_OWNER" Default="" Mode="" Description="Container Variable: BOT_OWNER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Session Salt" Target="BOT_SALT" Default="" Mode="" Description="Container Variable: BOT_SALT" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Callback URL" Target="BOT_CALLBACK" Default="" Mode="" Description="Container Variable: BOT_CALLBACK" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="WatchDog WebUI" Target="5052" Default="5052" Mode="tcp" Description="Container Port: 5052" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="AppData Config Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"></Config>
+</Container>
