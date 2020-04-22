@@ -1,24 +1,25 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Beta>True</Beta>
   <Name>WatchDog</Name>
   <Repository>groveld/watchdog</Repository>
   <Registry>https://hub.docker.com/r/groveld/watchdog</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>bash</Shell>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://discord.gg/2dV4xRN</Support>
   <Project>https://github.com/groveld/discord-watchdog</Project>
   <Overview>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
-  <Category>Network:Other Tools:</Category>
+  <Category>Tools: Other: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5052]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/watchdog.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/img/watchdog.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DonateText>Donate</DonateText>
-  <DonateLink/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText>If you like my work please donate.</DonateText>
+  <DonateLink>https://www.paypal.me/groveld</DonateLink>
   <Description>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -32,7 +33,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir/>
       <ContainerDir>/usr/src/watchdog/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
