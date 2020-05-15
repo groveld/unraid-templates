@@ -1,4 +1,4 @@
-# docker-templates
+# unraid-templates
 
 unRAID Docker Templates for Docker images in the "groveld" repository.
 
