@@ -12,8 +12,8 @@
   <Overview>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
   <Category>Tools: Other: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5052]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/watchdog.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/img/watchdog.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/groveld-watchdog.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/imgages/watchdog-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
