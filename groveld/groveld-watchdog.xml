@@ -16,8 +16,8 @@
   <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/groveld</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <Network>bridge</Network>
   <Privileged>false</Privileged>
+  <Network>bridge</Network>
   <Config Name="Port" Target="5052" Default="5052" Mode="tcp" Description="Container Port: 5052" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Bot Token" Target="BOT_TOKEN" Default="" Mode="" Description="Container Variable: BOT_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Client Secret" Target="BOT_SECRET" Default="" Mode="" Description="Container Variable: BOT_SECRET" Type="Variable" Display="always" Required="true" Mask="false"/>
