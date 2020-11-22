@@ -17,68 +17,13 @@
   <DonateLink>https://www.paypal.com/paypalme/groveld</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Privileged>false</Privileged>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>5052</HostPort>
-        <ContainerPort>5052</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment>
-    <Variable>
-      <Name>BOT_TOKEN</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>BOT_SECRET</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>BOT_OWNER</Name>
-      <Value>143720221977477120</Value>
-    </Variable>
-    <Variable>
-      <Name>BOT_SALT</Name>
-      <Value></Value>
-    </Variable>
-    <Variable>
-      <Name>BOT_CALLBACK</Name>
-      <Value>https://domain.ext/callback</Value>
-    </Variable>
-    <Variable>
-      <Name>BOT_PREFIX</Name>
-      <Value>!</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>002</Value>
-    </Variable>
-  </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/groveld-watchdog</HostDir>
-      <ContainerDir>/usr/src/watchdog/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
   <Config Name="Port" Target="5052" Default="5052" Mode="tcp" Description="Container Port: 5052" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Bot Token" Target="BOT_TOKEN" Default="" Mode="" Description="Container Variable: BOT_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Client Secret" Target="BOT_SECRET" Default="" Mode="" Description="Container Variable: BOT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Owner ID" Target="BOT_OWNER" Default="" Mode="" Description="Container Variable: BOT_OWNER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Bot Token" Target="BOT_TOKEN" Default="" Mode="" Description="Container Variable: BOT_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Client Secret" Target="BOT_SECRET" Default="" Mode="" Description="Container Variable: BOT_SECRET" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Owner ID" Target="BOT_OWNER" Default="143720221977477120" Mode="" Description="Container Variable: BOT_OWNER" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Salt" Target="BOT_SALT" Default="" Mode="" Description="Container Variable: BOT_SALT" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Callback URL" Target="BOT_CALLBACK" Default="https://domain.ext/callback" Mode="" Description="Container Variable: BOT_CALLBACK" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Command Prefix" Target="BOT_PREFIX" Default="!" Mode="" Description="Container Variable: BOT_PREFIX" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Callback URL" Target="BOT_CALLBACK" Default="https://domain.ext/callback" Mode="" Description="Container Variable: BOT_CALLBACK" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Command Prefix" Target="BOT_PREFIX" Default="!" Mode="" Description="Container Variable: BOT_PREFIX" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="AppData Config Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
