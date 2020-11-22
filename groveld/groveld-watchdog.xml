@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/watchdog.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/groveld-watchdog.xml</TemplateURL>
   <Beta>True</Beta>
   <Category>Tools: Other:</Category>
   <Name>watchdog</Name>
