@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
+<Container version="2">
   <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/main/groveld/watchdog.xml</TemplateURL>
   <Beta>True</Beta>
   <Category>Tools: Other:</Category>
-  <Name>groveld-watchdog</Name>
+  <Name>watchdog</Name>
   <Description>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
   <Overview>Discord-WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
   <Support>https://discord.gg/2dV4xRN</Support>
@@ -11,7 +11,11 @@
   <GitHub>https://github.com/groveld/discord-watchdog</GitHub>
   <Repository>ghcr.io/groveld/watchdog</Repository>
   <Project>https://github.com/groveld/discord-watchdog</Project>
-  <BindTime>true</BindTime>
+  <WebUI>http://[IP]:[PORT:5052]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/main/groveld/images/watchdog-icon.png</Icon>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/groveld</DonateLink>
+  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
   <Privileged>false</Privileged>
   <Networking>
     <Mode>bridge</Mode>
@@ -34,7 +38,7 @@
     </Variable>
     <Variable>
       <Name>BOT_OWNER</Name>
-      <Value></Value>
+      <Value>143720221977477120</Value>
     </Variable>
     <Variable>
       <Name>BOT_SALT</Name>
@@ -58,7 +62,7 @@
     </Variable>
     <Variable>
       <Name>UMASK</Name>
-      <Value>000</Value>
+      <Value>002</Value>
     </Variable>
   </Environment>
   <Data>
@@ -68,9 +72,15 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5052]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/main/groveld/images/watchdog-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/paypalme/groveld</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-</Containers>
+  <Config Name="Port" Target="5052" Default="5052" Mode="tcp" Description="Container Port: 5052" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Bot Token" Target="BOT_TOKEN" Default="" Mode="" Description="Container Variable: BOT_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Client Secret" Target="BOT_SECRET" Default="" Mode="" Description="Container Variable: BOT_SECRET" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Owner ID" Target="BOT_OWNER" Default="" Mode="" Description="Container Variable: BOT_OWNER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Salt" Target="BOT_SALT" Default="" Mode="" Description="Container Variable: BOT_SALT" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Callback URL" Target="BOT_CALLBACK" Default="https://domain.ext/callback" Mode="" Description="Container Variable: BOT_CALLBACK" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Command Prefix" Target="BOT_PREFIX" Default="!" Mode="" Description="Container Variable: BOT_PREFIX" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="AppData Config Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+</Container>
