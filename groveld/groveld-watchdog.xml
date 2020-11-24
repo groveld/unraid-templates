@@ -2,7 +2,6 @@
 <Container version="2">
   <Beta>True</Beta>
   <Date>2020-11-24</Date>
-  <TemplateURL>https://raw.githubusercontent.com/groveld/docker-templates/master/groveld/groveld-watchdog.xml</TemplateURL>
   <Category>Tools: Other:</Category>
   <Name>watchDog</Name>
   <Description>WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
