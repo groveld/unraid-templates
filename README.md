@@ -35,6 +35,7 @@ Firstly you need to be running Unraid version 6.2 or later, once installed follo
   <DonateLink/>
   <WebUI></WebUI>
   <Network>bridge</Network>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <ExtraParams/>
   <PostArgs/>
@@ -45,15 +46,23 @@ Firstly you need to be running Unraid version 6.2 or later, once installed follo
   <GitHub/>
   <BindTime/>
   <Banner/>
+  <Version/>
 </Container>
 ```
 
-## Credits
+## Templates
 
-[watchdog.png](images/watchdog.png) - Image from [PNGEgg](https://www.pngegg.com/en/png-saejn)
+### Watchdog
+
+<img src="groveld/images/watchdog.png" alt="Watchdog" max-width="100" max-height="100" />
+
+A simple Node service which checks the status of a Docker Container and returns a RESTful response. It can also be used to issue start, stop, and restart commands. The primary purpose of this service is to interface with Home Assistant. Build automations/notifications for all of your docker containers and much more!
+
+- Docker container maintained at - https://github.com/groveld/discord-watchdog
+- watchdog.png was grabbed from https://www.pngegg.com/en/png-saejn
 
 ___
 
 If you appreciate my work, then please consider buying me a beer :D
 
-[![PayPal](groveld/img/donate.png)](https://paypal.me/groveld)
+[![PayPal](groveld/images/donate.png)](https://paypal.me/groveld)

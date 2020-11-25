@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/groveld-watchdog.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/watchdog.xml</TemplateURL>
   <Beta>True</Beta>
   <Category>Tools: Other: Network:Other</Category>
   <Date>2020-11-25</Date>
@@ -12,7 +12,7 @@
   <Repository>ghcr.io/groveld/watchdog</Repository>
   <Project>https://github.com/groveld/discord-watchdog</Project>
   <WebUI>http://[IP]:[PORT:5052]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/master/images/watchdog.png</Icon>
+  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/images/watchdog.png</Icon>
   <DonateText>If you appreciate my work, please consider buying me a beer :D</DonateText>
   <DonateLink>https://paypal.me/groveld</DonateLink>
   <BaseImage>node:13.13-slim</BaseImage>
