@@ -1,6 +1,6 @@
 # unraid-templates
 
-Unraid Docker Templates for Docker images in the "groveld" repository.
+Docker templates for use with Unraid's dockerMan Docker management feature.
 
 ## Usage
 
@@ -15,8 +15,45 @@ Firstly you need to be running Unraid version 6.2 or later, once installed follo
 7. Click on the ***Create*** button at the bottom of the window to begin pulling down the Docker image
 8. Once the image is downloaded you should see it appear in the ***Docker Containers*** section
 
+## Base XML Template
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>True</Beta>
+  <Category></Category>
+  <Date></Date>
+  <TemplateURL/>
+  <Icon/>
+  <Name></Name>
+  <Repository></Repository>
+  <Registry></Registry>
+  <Support></Support>
+  <Project></Project>
+  <Overview></Overview>
+  <DonateText/>
+  <DonateLink/>
+  <WebUI></WebUI>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <ExtraParams/>
+  <PostArgs/>
+  <DonateImg/>
+  <BaseImage/>
+  <Branch/>
+  <License/>
+  <GitHub/>
+  <BindTime/>
+  <Banner/>
+</Container>
+```
+
+## Credits
+
+[watchdog.png](images/watchdog.png) - Image from [PNGEgg](https://www.pngegg.com/en/png-saejn)
+
 ___
 
 If you appreciate my work, then please consider buying me a beer :D
 
-[![PayPal donation](groveld/img/donate.png)](https://paypal.me/groveld)
+[![PayPal](groveld/img/donate.png)](https://paypal.me/groveld)
