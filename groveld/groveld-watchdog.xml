@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/watchdog.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/groveld-watchdog.xml</TemplateURL>
   <Beta>True</Beta>
   <Category>Tools: Other: Network:Other</Category>
   <Date>2020-11-28</Date>
-  <Name>watchdog</Name>
+  <Name>groveld-watchdog</Name>
   <Description>WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
   <Overview>WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
   <Support>https://discord.gg/2dV4xRN</Support>
@@ -18,13 +18,13 @@
   <BaseImage>node:13.13-slim</BaseImage>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Config Name="Dashboard Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Command Prefix" Target="WATCHDOG_PREFIX" Default="?" Mode="" Description="Container Variable: WATCHDOG_PREFIX" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="Owner ID" Target="DISCORD_OWNER_ID" Default="143720221977477120" Mode="" Description="Container Variable: DISCORD_OWNER_ID" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Dashboard Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Command Prefix" Target="WATCHDOG_PREFIX" Default="" Mode="" Description="Container Variable: WATCHDOG_PREFIX" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Owner ID" Target="DISCORD_OWNER_ID" Default="" Mode="" Description="Container Variable: DISCORD_OWNER_ID" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Client ID" Target="DISCORD_CLIENT_ID" Default="" Mode="" Description="Container Variable: DISCORD_CLIENT_ID" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Client Secret" Target="DISCORD_CLIENT_SECRET" Default="" Mode="" Description="Container Variable: DISCORD_CLIENT_SECRET" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Bot Token" Target="DISCORD_BOT_TOKEN" Default="" Mode="" Description="Container Variable: DISCORD_BOT_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="OAuth2 Redirect URL" Target="DISCORD_OAUTH2_URL" Default="https://watchdog.groveld.com/callback" Mode="" Description="Container Variable: DISCORD_OAUTH2_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="OAuth2 Redirect URL" Target="DISCORD_OAUTH2_URL" Default="" Mode="" Description="Container Variable: DISCORD_OAUTH2_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="AppData Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
