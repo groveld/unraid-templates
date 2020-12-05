@@ -5,7 +5,7 @@
   <Beta>False</Beta>
   <Category>HomeAutomation: Tools:</Category>
   <Date>2020-12-05</Date>
-  <Name>DSMR-Reader</Name>
+  <Name>DSMR-reader</Name>
   <Repository>xirixiz/dsmr-reader-docker</Repository>
   <Registry>https://hub.docker.com/r/xirixiz/dsmr-reader-docker</Registry>
   <Support>https://github.com/dsmrreader/dsmr-reader/issues</Support>
