@@ -50,19 +50,23 @@ Firstly you need to be running Unraid version 6.2 or later, once installed follo
 </Container>
 ```
 
-## Watchdog
-<img src="groveld/images/watchdog.png" alt="Watchdog" height="100"/>
+## WatchDog
+<img src="groveld/images/watchdog.png" alt="WatchDog" height="100"/>
+
 A simple Node service which checks the status of a Docker Container and returns a RESTful response. It can also be used to issue start, stop, and restart commands. The primary purpose of this service is to interface with Home Assistant. Build automations/notifications for all of your docker containers and much more!
 
-- Docker container maintained at - https://github.com/groveld/discord-watchdog
-- watchdog.png was grabbed from https://www.pngegg.com/en/png-saejn
+- Application Site: https://watchdog.groveld.com/
+- Docker Hub: https://github.com/users/groveld/packages/container/package/watchdog
+- Github: https://github.com/groveld/discord-watchdog
 
-## DSMR-reader
-<img src="groveld/images/dsmrreader.png" alt="DSMR-reader" height="100"/>
+## DSMR Reader
+<img src="groveld/images/dsmrreader.png" alt="DSMR Reader" height="100"/>
+
 Open-source, non-commercial reader for (Dutch) smart meters supporting the DSMR protocol.
 
-- Docker container maintained at - https://github.com/xirixiz/dsmr-reader-docker
-- the logo was grabbed from the [DSMR-reader](https://github.com/dsmrreader/dsmr-reader) repository
+- Application Site: https://dsmr-reader.readthedocs.io/
+- Docker Hub: https://hub.docker.com/r/xirixiz/dsmr-reader-docker
+- Github: https://github.com/dsmrreader/dsmr-reader
 
 ___
 
