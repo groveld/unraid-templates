@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/groveld-dsmrreader.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/images/dsmrreader.png</Icon>
+  <Beta>False</Beta>
+  <Category>HomeAutomation: Tools:</Category>
+  <Date>2020-12-05</Date>
+  <Name>DSMR-Reader</Name>
+  <Repository>xirixiz/dsmr-reader-docker</Repository>
+  <Registry>https://hub.docker.com/r/xirixiz/dsmr-reader-docker</Registry>
+  <Support>https://github.com/dsmrreader/dsmr-reader/issues</Support>
+  <Project>https://dsmr-reader.readthedocs.io/</Project>
+  <Overview>DSMR-protocol reader, telegram data storage and energy consumption visualizer. Can be used for reading the smart meter DSMR (Dutch Smart Meter Requirements) P1 port yourself at your home.</Overview>
+  <Description>Open-source, non-commercial reader for (Dutch) smart meters supporting the DSMR protocol.</Description>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Host" Target="VIRTUAL_HOST" Default="localhost" Mode="" Description="Container Variable: VIRTUAL_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Encryption key" Target="DJANGO_SECRET_KEY" Default="dsmrreader" Mode="" Description="Container Variable: DJANGO_SECRET_KEY" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Database" Target="DJANGO_DATABASE_NAME" Default="dsmrreader" Mode="" Description="Container Variable: DJANGO_DATABASE_NAME" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Username" Target="DJANGO_DATABASE_USER" Default="dsmrreader" Mode="" Description="Container Variable: DJANGO_DATABASE_USER" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Password" Target="DJANGO_DATABASE_PASSWORD" Default="dsmrreader" Mode="" Description="Container Variable: DJANGO_DATABASE_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Host" Target="DJANGO_DATABASE_HOST" Default="" Mode="" Description="Container Variable: DJANGO_DATABASE_HOST" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Postgres Port" Target="DJANGO_DATABASE_PORT" Default="5432" Mode="" Description="Container Variable: DJANGO_DATABASE_PORT" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
