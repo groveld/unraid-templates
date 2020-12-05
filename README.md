@@ -57,6 +57,13 @@ A simple Node service which checks the status of a Docker Container and returns 
 - Docker container maintained at - https://github.com/groveld/discord-watchdog
 - watchdog.png was grabbed from https://www.pngegg.com/en/png-saejn
 
+## DSMR-reader
+<img src="groveld/images/dsmrreader.png" alt="DSMR-reader" height="100"/>
+Open-source, non-commercial reader for (Dutch) smart meters supporting the DSMR protocol.
+
+- Docker container maintained at - https://github.com/xirixiz/dsmr-reader-docker
+- the logo was grabbed from the [DSMR-reader](https://github.com/dsmrreader/dsmr-reader) repository
+
 ___
 
 If you appreciate my work, then please consider buying me a beer :D
