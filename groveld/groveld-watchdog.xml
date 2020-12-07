@@ -25,7 +25,7 @@
   <Config Name="Client Secret" Target="DISCORD_CLIENT_SECRET" Default="" Mode="" Description="Container Variable: DISCORD_CLIENT_SECRET" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Bot Token" Target="DISCORD_BOT_TOKEN" Default="" Mode="" Description="Container Variable: DISCORD_BOT_TOKEN" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="OAuth2 Redirect URL" Target="DISCORD_OAUTH2_URL" Default="" Mode="" Description="Container Variable: DISCORD_OAUTH2_URL" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="AppData Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="AppData Config Path" Target="/usr/src/watchdog/config" Default="/mnt/user/appdata/groveld-watchdog" Mode="rw" Description="Container Path: /usr/src/watchdog/config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
   <Config Name="UMASK" Target="UMASK" Default="000" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
