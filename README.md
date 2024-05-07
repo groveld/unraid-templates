@@ -15,41 +15,6 @@ Firstly you need to be running Unraid version 6.2 or later, once installed follo
 7. Click on the ***Create*** button at the bottom of the window to begin pulling down the Docker image
 8. Once the image is downloaded you should see it appear in the ***Docker Containers*** section
 
-## Base XML Template
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<Container version="2">
-  <Beta>True</Beta>
-  <Category></Category>
-  <Date></Date>
-  <TemplateURL/>
-  <Icon/>
-  <Name></Name>
-  <Repository></Repository>
-  <Registry></Registry>
-  <Support></Support>
-  <Project></Project>
-  <Overview></Overview>
-  <DonateText/>
-  <DonateLink/>
-  <WebUI></WebUI>
-  <Network>bridge</Network>
-  <Shell>sh</Shell>
-  <Privileged>false</Privileged>
-  <ExtraParams/>
-  <PostArgs/>
-  <DonateImg/>
-  <BaseImage/>
-  <Branch/>
-  <License/>
-  <GitHub/>
-  <BindTime/>
-  <Banner/>
-  <Version/>
-</Container>
-```
-
 ## WatchDog
 <img src="groveld/images/watchdog.png" alt="WatchDog" height="100"/>
 
