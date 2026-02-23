@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>groveld-watchdog</Name>
+  <Description>WatchDog is a general-purpose Discord bot build with the Discord.js library.</Description>
+  <Overview>WatchDog is a general-purpose Discord bot build with the Discord.js library.</Overview>
+  <Repository>ghcr.io/groveld/watchdog</Repository>
+  <Project>https://github.com/groveld/discord-watchdog</Project>
+  <Registry>https://github.com/users/groveld/packages/container/package/watchdog</Registry>
+  <TemplateURL>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/watchdog.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/groveld/unraid-templates/master/groveld/images/watchdog.png</Icon>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
+  <Network>proxynet</Network>
+  <Privileged>false</Privileged>
+  <Config Name="WEBUI_PORT" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="DOCKER_MODS" Target="DOCKER_MODS" Default="linuxserver/mods:universal-cloudflared" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="CF_REMOTE_MANAGE_TOKEN" Target="CF_REMOTE_MANAGE_TOKEN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">
+  <Config Name="APPDATA_PATH" Target="/config" Default="/mnt/user/appdata/caddsign-tools" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="Container Variable: UMASK" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+</Container>
